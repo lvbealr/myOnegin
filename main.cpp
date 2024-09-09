@@ -370,8 +370,10 @@ int main() {
     textData Onegin = {};
 
     textDataInitialize(fileName, &Onegin);
+
     fputsText(&Onegin, Onegin.sortedText, "w");
     fputsText(&Onegin, Onegin.reverseSortedText, "a");
     fputsText(&Onegin, Onegin.origText, "a");
+    
     textDataDestruct(&Onegin);
 }
