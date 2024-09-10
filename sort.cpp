@@ -49,9 +49,9 @@ int swap(size_t *firstElement, size_t *secondElement) {
     customWarning(firstElement  != NULL, 1);
     customWarning(secondElement != NULL, 1);
 
-    size_t temp = 0;
-    temp = *firstElement;
-    *firstElement = *secondElement;
+    size_t temp    = 0;
+    temp           = *firstElement;
+    *firstElement  = *secondElement;
     *secondElement = temp;
 
     return 0;

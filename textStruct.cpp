@@ -8,17 +8,21 @@
 int textDataInitialize(const char *fileName, textData *textData) {
     customWarning(textData != NULL, 1);
 
-    FILE *file = fopen(fileName, "r");
+    FILE *file           = fopen(fileName, "r");
     struct stat fileData;
     fstat(fileno(file), &fileData);
 
-    textData->fileSize = (size_t) fileData.st_size + 1; // last \n
-    textData->text     = (char *)calloc(textData->fileSize, sizeof(char));
+    textData->fileSize   = (size_t) fileData.st_size + 1; // last \n
+    textData->text       = (char *)calloc(textData->fileSize, sizeof(char));
 
     fread(textData->text, sizeof(char), textData->fileSize, file);
+
+    // size_t sizeFread     = fread(textData->text, sizeof(char), textData->fileSize, file);
+    // printf("%lu %lu", sizeFread, textData->fileSize);
+    
     fclose(file);
 
-    textData->lineCount = lineCounter(textData);
+    textData->lineCount  = lineCounter(textData);
 
     textData->newLine    = (char **)calloc(textData->lineCount, sizeof(char **));
     newLinePoint(textData);
@@ -71,9 +75,9 @@ int newLinePoint(textData *textData) {
     customWarning(textData != NULL, 1);
 
     *textData->newLine = textData->text;
-    size_t lineNumber = 1;
+    size_t lineNumber  = 1;
     
-    char *textPointer = textData->text;
+    char *textPointer  = textData->text;
 
     while (textPointer < textData->text + textData->fileSize) {
         textPointer++;
@@ -108,8 +112,8 @@ int fputsText(const textData *textData, const size_t *sortType, const char *mode
 
     FILE *fileOut = fopen("texts/oneginOutEng.txt", mode);
 
-    for (size_t line = 0; line < textData->lineCount; line++) {
-        textPointer = textData->newLine[sortType[line]];
+    for (size_t line   = 0; line < textData->lineCount; line++) {
+        textPointer    = textData->newLine[sortType[line]];
         endLinePointer = textData->newLine[sortType[line] + 1];
 
         if (*textPointer != '\n') {

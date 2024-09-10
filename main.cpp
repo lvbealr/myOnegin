@@ -46,13 +46,13 @@
 // }
 
 // int main() {
-//     const size_t LINE_COUNT        = 5237;
-//     const size_t MAX_SYMBOLS_COUNT = 70;
+//     const size_t LINE_COUNT                 = 5237;
+//     const size_t MAX_SYMBOLS_COUNT          = 70;
 
 //     char str[LINE_COUNT][MAX_SYMBOLS_COUNT] = {};
 //     int* asciiStrPointers[LINE_COUNT]       = {};
 
-//     int lineIndex[LINE_COUNT] = {};
+//     int lineIndex[LINE_COUNT]               = {};
 
 //     for (int i = 0; i < LINE_COUNT; i++) {
 //         lineIndex[i] = i;
@@ -68,7 +68,7 @@
 
 //         strToAscii(asciiStr, str[i], len);
         
-//         asciiStrPointers[i] = asciiStr;
+//         asciiStrPointers[i]        = asciiStr;
 //     }
 
 //     fclose(file);
@@ -93,15 +93,18 @@
 //     fclose(fileOut);
 // }
 
+// TODO FLAGS (-sort, -rstort, -orig, -all)
+// TODO ascii magic numbers
+
 int main() {
     const char *fileName = "texts/oneginEng.txt";
-    textData Onegin = {};
+    textData Onegin      = {};
 
     textDataInitialize(fileName, &Onegin);
 
-    fputsText(&Onegin, Onegin.sortedText, "w");
+    fputsText(&Onegin, Onegin.sortedText,        "w");
     fputsText(&Onegin, Onegin.reverseSortedText, "a");
-    fputsText(&Onegin, Onegin.origText, "a");
+    fputsText(&Onegin, Onegin.origText,          "a");
     
     textDataDestruct(&Onegin);
 }
