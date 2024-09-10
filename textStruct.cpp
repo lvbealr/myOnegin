@@ -8,12 +8,23 @@
 int textDataInitialize(const char *fileName, textData *textData) {
     customWarning(textData != NULL, 1);
 
-    FILE *file           = fopen(fileName, "r");
+    // FILE *file           = fopen(fileName, "r");
+    // struct stat fileData;
+    // fstat(fileno(file), &fileData);
+
     struct stat fileData;
-    fstat(fileno(file), &fileData);
+    stat(fileName, &fileData);
+
+    // TODO read <io.h> !!!!!!!!
+    // TODO binary mode (by read())
+    // TODO \r \n to -> \0
+    // TODO fputs(buffer = textData->text) without reaplce \r \n -> \0
+    // TODO strchr() to find \n == for(;;) !!!! OPTIONAL !!!!
 
     textData->fileSize   = (size_t) fileData.st_size + 1; // last \n
     textData->text       = (char *)calloc(textData->fileSize, sizeof(char));
+
+    FILE *file           = fopen(fileName, "r");
 
     fread(textData->text, sizeof(char), textData->fileSize, file);
 

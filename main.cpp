@@ -7,6 +7,7 @@
 #include "textStruct.h"
 #include "customStrcmp.h"
 #include "sort.h"
+#include "putText.h"
 
 // void strToAscii(int *asciiArray, const char *string, size_t lenSize) {
 //     size_t asciiArrayIndex = 1;
@@ -95,6 +96,8 @@
 
 // TODO FLAGS (-sort, -rstort, -orig, -all)
 // TODO ascii magic numbers
+// TODO myFree : free(&ptr) | *ptr = NULL;
+// CHECK QSORT() LOMUTO, HOARE
 
 int main() {
     const char *fileName = "texts/oneginEng.txt";
@@ -102,9 +105,7 @@ int main() {
 
     textDataInitialize(fileName, &Onegin);
 
-    fputsText(&Onegin, Onegin.sortedText,        "w");
-    fputsText(&Onegin, Onegin.reverseSortedText, "a");
-    fputsText(&Onegin, Onegin.origText,          "a");
+    putText(&Onegin);
     
     textDataDestruct(&Onegin);
 }
