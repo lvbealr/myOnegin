@@ -19,7 +19,7 @@ int textDataInitialize(const char *fileName, textData *textData) {
 
     // size_t sizeFread     = fread(textData->text, sizeof(char), textData->fileSize, file);
     // printf("%lu %lu", sizeFread, textData->fileSize);
-    
+
     fclose(file);
 
     textData->lineCount  = lineCounter(textData);
@@ -58,7 +58,7 @@ int textDataDestruct(textData *textData) {
 size_t lineCounter(textData *textData) {
     customWarning(textData != NULL, 1);
 
-    int lineCount = 0; 
+    size_t lineCount  = 0; 
 
     char *textPointer = textData->text;
     while (textPointer < textData->text + textData->fileSize) {
