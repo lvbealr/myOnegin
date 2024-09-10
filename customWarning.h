@@ -1,6 +1,8 @@
 #ifndef CUSTOM_WARNING_H
 #define CUSTOM_WARNING_H
 
+#include <cstdio>
+
 #define customWarning(expression, returnMessage) do {                       \
     if (!(expression)) {                                                   \
         printf("Assertion Error: %s, file (%s), function (%s), line %d\n", \
@@ -9,4 +11,4 @@
     }                                                                      \
 } while (0)
 
-#endif
+#endif // CUSTOM_WARNING_H_
