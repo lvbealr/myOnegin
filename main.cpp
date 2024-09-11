@@ -104,7 +104,7 @@ int main() {
     textData Onegin      = {};
 
     textDataInitialize(fileName, &Onegin);
-
+    
     putText(&Onegin);
     
     textDataDestruct(&Onegin);
