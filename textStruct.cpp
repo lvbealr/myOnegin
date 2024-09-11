@@ -4,6 +4,7 @@
 #include "textStruct.h"
 #include "customWarning.h"
 #include "sort.h"
+#include "customFree.h"
 
 int textDataInitialize(const char *fileName, textData *textData) {
     customWarning(textData != NULL, 1);
@@ -15,34 +16,72 @@ int textDataInitialize(const char *fileName, textData *textData) {
     struct stat fileData;
     stat(fileName, &fileData);
 
+    // TODO CHECK FILENAME
     // TODO read <io.h> !!!!!!!!
     // TODO binary mode (by read())
     // TODO \r \n to -> \0
-    // TODO fputs(buffer = textData->text) without reaplce \r \n -> \0
+    // TODO fputs(buffer = textData->text) without replace \r \n -> \0
     // TODO strchr() to find \n == for(;;) !!!! OPTIONAL !!!!
 
-    textData->fileSize   = (size_t) fileData.st_size + 1; // last \n
+    textData->fileSize   = (size_t) /*TODO ⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠀⠀⠀ spaces
+                                           ⠀⠀⠀⠀⠀⠀⢀⣾⡿⠋⠀⠿⠇⠉⠻⣿⣄⠀⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⢠⣿⠏⠀⠀⠀⠀⠀⠀⠀⠙⣿⣆⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⢠⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣆⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⢸⣿⡄⠀⠀⠀⢀⣤⣀⠀⠀⠀⠀⣿⡿⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠻⣿⣶⣶⣾⡿⠟⢿⣷⣶⣶⣿⡟⠁⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡏⠉⠁⠀⠀⠀⠀⠉⠉⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣸⣿⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⠀⠀⠀⣿⡇⢀⣴⣿⠇⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
+                                           ⠀⠀⠀⢀⣠⣴⣿⣷⣿⠟⠁⠀⠀⠀⠀⠀⣿⣧⣄⡀⠀⠀⠀
+                                           ⠀⢀⣴⡿⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⢿⣷⣄⠀
+                                           ⢠⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣆
+                                           ⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿
+                                           ⣿⣇⠀⠀⠀⠀⠀⠀⢸⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿
+                                           ⢹⣿⡄⠀⠀⠀⠀⠀⠀⢿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿
+                                           ⠀⠻⣿⣦⣀⠀⠀⠀⠀⠈⣿⣷⣄⡀⠀⠀⠀⠀⣀⣤⣾⡟⠁
+                                           ⠀⠀⠈⠛⠿⣿⣷⣶⣾⡿⠿⠛⠻⢿⣿⣶⣾⣿⠿⠛⠉⠀⠀*/ fileData.st_size; // last \n
+
     textData->text       = (char *)calloc(textData->fileSize, sizeof(char));
 
     FILE *file           = fopen(fileName, "r");
 
-    fread(textData->text, sizeof(char), textData->fileSize, file);
+    // fread(textData->text, sizeof(char), textData->fileSize, file);
 
-    // size_t sizeFread     = fread(textData->text, sizeof(char), textData->fileSize, file);
-    // printf("%lu %lu", sizeFread, textData->fileSize);
+    size_t sizeFread            = fread(textData->text, sizeof(char), textData->fileSize, file);
+
+    customWarning(sizeFread == textData->fileSize, 1);
 
     fclose(file);
 
-    textData->lineCount  = lineCounter(textData);
+    textData->lineCount         = lineCounter(textData);
 
-    textData->newLine    = (char **)calloc(textData->lineCount, sizeof(char **));
+    textData->newLine           = (char **)calloc(textData->lineCount, sizeof(char *));
     newLinePoint(textData);
 
-    textData->outputText = (size_t *)calloc(textData->lineCount * 3, sizeof (size_t *)); // for 3 texts;
+    /* TODO Use pointers, not indeces 
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⣤⣤⣀⠀⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀
+        ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀
+        ⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀
+        ⠀⠀⠀⠀⢀⣀⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⢋⣭⡍⣿⣿⣿⣿⣿⣿⠀
+        ⠀⢀⣴⣶⣶⣝⢷⡝⢿⣿⣿⣿⠿⠛⠉⠀⠀⣰⣿⣿⢣⣿⣿⣿⣿⣿⣿⡇
+        ⢀⣾⣿⣿⣿⣿⣧⠻⡌⠿⠋⠁⠀⠀⠀⠀⢰⣿⣿⡏⣸⣿⣿⣿⣿⣿⣿⣿
+        ⣼⣿⣿⣿⣿⣿⣿⡇⠁⠀⠀⠀⠀⠀⠀⠀⠈⠻⢿⠇⢻⣿⣿⣿⣿⣿⣿⡟
+        ⠙⢹⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⢿⣿⣿⡿⠟⠁
+        ⠀⠀⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    */
+    textData->sortedText        = (size_t *)calloc(textData->lineCount, sizeof(size_t));
+    textData->reverseSortedText = (size_t *)calloc(textData->lineCount, sizeof(size_t));
+    textData->origText          = (size_t *)calloc(textData->lineCount, sizeof(size_t));
 
-    textData->sortedText        = textData->outputText;
-    textData->reverseSortedText = textData->sortedText        + textData->lineCount;
-    textData->origText          = textData->reverseSortedText + textData->lineCount; 
+    // TODO 3 calloc's or 3 buffers and 3 pointers
+    // TODO STRUCT ARRAY FOR ...
 
     sort(textData);
 
@@ -55,9 +94,11 @@ int textDataDestruct(textData *textData) {
     textData->fileSize          = 0;
     textData->lineCount         = 0;
 
-    free(textData->text);
+    customFree(textData->text);
     free(textData->newLine);
-    free(textData->outputText);
+    free(textData->origText);
+    free(textData->sortedText);
+    free(textData->origText);
 
     textData->origText          = NULL;
     textData->sortedText        = NULL;

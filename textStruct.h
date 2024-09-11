@@ -8,7 +8,6 @@ struct textData {
     size_t lineCount          = 0;
     char *text                = NULL;
     char **newLine            = NULL;
-    size_t *outputText        = NULL;
     size_t *sortedText        = NULL;
     size_t *reverseSortedText = NULL;
     size_t *origText          = NULL;
