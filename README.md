@@ -54,45 +54,24 @@ make
 Once compiled you can run the executable with the following command.
 
 ```bash
-./main
+./ONEGIN
 ```
 
 The program will start in manual mode and ask you to enter data for correct operation.
 
-
 ## 🗎 Documentation <a name = "documentation"></a>
 
-For convenient use of the program, [Doxygen documentation](https://lvbealr.github.io) is included with the project.
+THIS ARTICLE IS BEING EDITED...
+
+For convenient use of the program, [Doxygen documentation](https://i.imgur.com/cszI6HX.png) is included with the project.
 
 ## 🔧 MODES <a name = "modes"></a>
 
-The program provides several operating modes.
-
-### SORTING MODE
-
-In sorting mode, the program will ask you to enter the coefficients of the quadratic equation with the following message:
-
-```bash
-./main > Input values of coefficients a, b, c: ### your input
-```
-
-### REVERSE SORTING MODE
-
-In test mode, the program will perform tests, the data for which is specified in a file called testData.h. For using this mode you should enter following command in console.
-
-```bash
-./main --test ### running tests
-```
-
-### ORIGINAL MODE
-
-Google tests mode involves checking the program with test data from the testData.h file using Google C++ Testing Framework
-
-```bash
-./main --gtest ### running google tests
-```
+THIS ARTICLE IS BEING EDITED...
 
 ## 🎈 Example Usage <a name="usage"></a>
+
+THIS ARTICLE IS BEING EDITED...
 
 ### MANUAL MODE
 
@@ -166,16 +145,16 @@ Test  10: [SUCCESS]
 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
-
+THIS ARTICLE IS BEING EDITED...
 - [Google C++ Testing Framework](https://github.com/google/googletest) - Testing Framework
 
 ## ✍️ Authors <a name = "authors"></a>
 
 - [@lvbealr](https://github.com/lvbealr) - Idea & Initial work
-- [@overx4](https://vk.com/overx4) - Support & Motivate <3 (какие нах*й гугл тесты????!!№$$)
 
 
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- [@livlavr](https://github.com/livlavr) - present bananas & did big nothing
+- [@livlavr](https://github.com/livlavr) - Good Boy
+- [@Iprime111](https://github.com/Iprime111) - Bad Boy 😈
