@@ -3,8 +3,16 @@
 
 #include <cstdio>
 
+// TODO: FUNCTIONS TO INITIALIZE TEXTLINE STRUCT //
+// TODO: ONE SORT-FUNCTION TO SORT FORWARD AND SORT BACKFORWARD ?? //
+struct textLine {
+    char **linePointer = NULL;
+    size_t lineSize    = 0;
+};
+
+// TODO: DELETE CHAR **NEWLINE FROM TEXTDATA //
 struct textData {
-    size_t fileSize           = 0;
+    ssize_t fileSize          = 0;
     size_t lineCount          = 0;
     char *text                = NULL;
     char **newLine            = NULL;

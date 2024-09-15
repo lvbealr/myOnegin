@@ -8,7 +8,6 @@
 <h2 align="center">📖 ENCYCLOPEDIA OF RUSSIAN LIFE IN C 📖</h2>
 
 ## 📝 Table of Contents
-
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Documentation](#documentation)

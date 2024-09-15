@@ -1,7 +1,7 @@
 #include <cstdio>
 
 #include "putText.h"
-#include "customWarning.h"
+#include "customWarning/customWarning.h"
 
 int putText(textData *text) {
     customWarning(text != NULL, 1);

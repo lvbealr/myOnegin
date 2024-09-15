@@ -3,7 +3,7 @@
 #include <cstring>
 #include <cctype>
 
-#include "customWarning.h"
+#include "customWarning/customWarning.h"
 #include "textStruct.h"
 #include "customStrcmp.h"
 #include "sort.h"
@@ -102,10 +102,12 @@
 int main() {
     const char *fileName = "texts/oneginEng.txt";
     textData Onegin      = {};
-
-    textDataInitialize(fileName, &Onegin);
     
-    putText(&Onegin);
+
+    if (!textDataInitialize(fileName, &Onegin)) {
+        putText(&Onegin);
+    }
+
     
     textDataDestruct(&Onegin);
 }

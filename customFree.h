@@ -1,8 +1,8 @@
-#ifndef CUSTOM_FREE_H_
-#define CUSTOM_FREE_H_
+// #ifndef CUSTOM_FREE_H_
+// #define CUSTOM_FREE_H_
 
-#define customFree(pointer) do {
+// #define customFree(pointer) do {
 
-} while(0)
+// } while(0)
 
-#endif // CUSTOM_FREE_H_
+// #endif // CUSTOM_FREE_H_

@@ -2,7 +2,7 @@
 #include <cctype>
 
 #include "customStrcmp.h"
-#include "customWarning.h"
+#include "customWarning/customWarning.h"
 
 int customStrcmp(const char *firstString, const char *secondString) {
     customWarning(firstString  != NULL, 1);

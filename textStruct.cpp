@@ -1,63 +1,51 @@
 #include <cstdlib>
 #include <sys/stat.h>
+#include <sys/types.h>
+#include <fcntl.h>
+#include <unistd.h>
 
 #include "textStruct.h"
-#include "customWarning.h"
+#include "customWarning/customWarning.h"
 #include "sort.h"
 #include "customFree.h"
+
+enum fileErrors {
+    noSuchFile = -1
+};
+
+int textLineInitialize(textData *textData) {
+    customWarning(textData != NULL, 1);
+
+    textLine *lineArray = (textLine *)calloc(textData->lineCount, sizeof(textLine));
+
+    size_t lineIndex    = 0;
+}
 
 int textDataInitialize(const char *fileName, textData *textData) {
     customWarning(textData != NULL, 1);
 
-    // FILE *file           = fopen(fileName, "r");
-    // struct stat fileData;
-    // fstat(fileno(file), &fileData);
-
     struct stat fileData;
     stat(fileName, &fileData);
 
-    // TODO CHECK FILENAME
-    // TODO read <io.h> !!!!!!!!
-    // TODO binary mode (by read())
-    // TODO \r \n to -> \0
-    // TODO fputs(buffer = textData->text) without replace \r \n -> \0
     // TODO strchr() to find \n == for(;;) !!!! OPTIONAL !!!!
 
-    textData->fileSize   = (size_t) /*TODO ⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣿⣿⣷⣤⡀⠀⠀⠀⠀⠀⠀⠀ spaces
-                                           ⠀⠀⠀⠀⠀⠀⢀⣾⡿⠋⠀⠿⠇⠉⠻⣿⣄⠀⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⢠⣿⠏⠀⠀⠀⠀⠀⠀⠀⠙⣿⣆⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⢠⣿⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣆⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⢸⣿⡄⠀⠀⠀⢀⣤⣀⠀⠀⠀⠀⣿⡿⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠻⣿⣶⣶⣾⡿⠟⢿⣷⣶⣶⣿⡟⠁⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡏⠉⠁⠀⠀⠀⠀⠉⠉⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⣸⣿⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⠀⠀⠀⣿⡇⢀⣴⣿⠇⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀
-                                           ⠀⠀⠀⢀⣠⣴⣿⣷⣿⠟⠁⠀⠀⠀⠀⠀⣿⣧⣄⡀⠀⠀⠀
-                                           ⠀⢀⣴⡿⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⢿⣷⣄⠀
-                                           ⢠⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣆
-                                           ⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿
-                                           ⣿⣇⠀⠀⠀⠀⠀⠀⢸⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿
-                                           ⢹⣿⡄⠀⠀⠀⠀⠀⠀⢿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿
-                                           ⠀⠻⣿⣦⣀⠀⠀⠀⠀⠈⣿⣷⣄⡀⠀⠀⠀⠀⣀⣤⣾⡟⠁
-                                           ⠀⠀⠈⠛⠿⣿⣷⣶⣾⡿⠿⠛⠻⢿⣿⣶⣾⣿⠿⠛⠉⠀⠀*/ fileData.st_size; // last \n
+    textData->fileSize   = (ssize_t)fileData.st_size; // last \n
 
-    textData->text       = (char *)calloc(textData->fileSize, sizeof(char));
+    textData->text       = (char *)calloc((size_t)textData->fileSize, sizeof(char));
 
-    FILE *file           = fopen(fileName, "r");
-
+    // FILE *file           = fopen(fileName, "r");
+    int openFile = open(fileName, O_RDONLY);
+    customWarning(openFile != noSuchFile, 1);
     // fread(textData->text, sizeof(char), textData->fileSize, file);
 
-    size_t sizeFread            = fread(textData->text, sizeof(char), textData->fileSize, file);
+    // size_t sizeFread            = fread(textData->text, sizeof(char), textData->fileSize, file);
+    ssize_t sizeRead = read(openFile, textData->text, (size_t)textData->fileSize); 
 
-    customWarning(sizeFread == textData->fileSize, 1);
+    // customWarning(sizeFread == textData->fileSize, 1);
+    customWarning(sizeRead == textData->fileSize, 1);
 
-    fclose(file);
+    // fclose(file);
+    close(openFile);
 
     textData->lineCount         = lineCounter(textData);
 
@@ -85,7 +73,7 @@ int textDataInitialize(const char *fileName, textData *textData) {
 
     sort(textData);
 
-    return 0;
+    return (openFile <= 0); // openFile returns -1 by error, so textDataInitialize returns 0 by success and 1 by error
 }
 
 int textDataDestruct(textData *textData) {
@@ -94,11 +82,11 @@ int textDataDestruct(textData *textData) {
     textData->fileSize          = 0;
     textData->lineCount         = 0;
 
-    customFree(textData->text);
+    free(textData->text);
     free(textData->newLine);
-    free(textData->origText);
-    free(textData->sortedText);
-    free(textData->origText);
+    // free(textData->origText);   ???
+    // free(textData->sortedText); ???
+    // free(textData->origText);   ???
 
     textData->origText          = NULL;
     textData->sortedText        = NULL;
