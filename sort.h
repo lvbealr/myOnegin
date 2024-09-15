@@ -2,10 +2,9 @@
 #define SORT_H_
 
 // FUNCTION PROTOTYPES //
-int sort(textData *textData);
-int bubbleSort(textData *textData);
-int bubbleReverseSort(textData *textData);
-int swap(size_t *firstElement, size_t *secondElement);
+void mySort(void *array, size_t arrayLength, size_t size,
+            int (*comparator)(const void *firstElem, const void *secondElem));
+void mySwap(void *firstElem, void *secondElem, size_t size);
 // FUNCTION PROTOTYPES //
 
 #endif // SORT_H_

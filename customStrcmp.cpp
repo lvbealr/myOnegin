@@ -1,17 +1,24 @@
 #include <cstddef>
 #include <cctype>
+#include <cstdlib>
 
 #include "customStrcmp.h"
 #include "customWarning/customWarning.h"
+#include "textStruct.h"
 
-int customStrcmp(const char *firstString, const char *secondString) {
-    customWarning(firstString  != NULL, 1);
-    customWarning(secondString != NULL, 1);
+int customStrcmp(const void *firstElem, const void *secondElem) {
+    customWarning(firstElem  != NULL, 1);
+    customWarning(secondElem != NULL, 1);
+    
+    // char *firstString  = *(char **)firstElem;
+    // char *secondString = *(char **)secondElem;
+    const char *firstString    = ((const textLine *)firstElem)->linePointer;
+    const char *secondString   = ((const textLine *)secondElem)->linePointer;
 
-    int firstIndex    = 0, secondIndex   = 0;
-    int firstElement  = 0, secondElement = 0;
+    size_t firstIndex    = 0, secondIndex   = 0;
+    int firstElement     = 0, secondElement = 0;
 
-    int asciiDiff     = 0;
+    int asciiDiff        = 0;
 
     while (asciiDiff == 0) {
         firstElement  = firstString[firstIndex];
@@ -25,7 +32,7 @@ int customStrcmp(const char *firstString, const char *secondString) {
         }
         if (isalpha(firstElement) || firstElement == ' ') {
             if (isalpha(secondElement) || secondElement == ' ') {
-                asciiDiff += firstElement - secondElement;
+                asciiDiff += tolower(firstElement) - tolower(secondElement);
                 firstIndex++; secondIndex++;
             }
             else {
@@ -39,17 +46,22 @@ int customStrcmp(const char *firstString, const char *secondString) {
     return asciiDiff;
 }
 
-int customReverseStrcmp(const char *firstString, const char *secondString) {
-    customWarning(firstString  != NULL, 1);
-    customWarning(secondString != NULL, 1);
+int customReverseStrcmp(const void *firstElem, const void *secondElem) {
+    customWarning(firstElem  != NULL, 1);
+    customWarning(secondElem != NULL, 1);
 
-    firstString       = firstString  - 2; // shift to end of previous line
-    secondString      = secondString - 2; // shift to end of previous line
+    // char *firstString  = *(char **)firstElem;
+    // char *secondString = *(char **)secondElem;
+    const char *firstString    = ((const textLine *)firstElem)->linePointer;
+    const char *secondString   = ((const textLine *)secondElem)->linePointer;
 
-    int firstIndex    = 0, secondIndex   = 0;
-    int firstElement  = 0, secondElement = 0;
+    const size_t firstLen      = ((const textLine *)firstElem)->lineSize;
+    const size_t secondLen     = ((const textLine *)secondElem)->lineSize;
 
-    int asciiDiff     = 0;
+    size_t firstIndex    = firstLen - 1, secondIndex   = secondLen - 1;
+    int firstElement     = 0,            secondElement = 0;
+
+    int asciiDiff        = 0;
 
     while (asciiDiff == 0) {
         firstElement  = firstString[firstIndex];

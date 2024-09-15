@@ -2,8 +2,8 @@
 #define CUSTOM_STRCMP_H_
 
 // FUNCTION PROROTYPES //
-int customStrcmp(const char *firstString, const char *secondString);
-int customReverseStrcmp(const char *firstString, const char *secondString);
+int customStrcmp(const void *firstElem, const void *secondElem);
+int customReverseStrcmp(const void *firstElem, const void *secondElem);
 // FUNCTION PROTOTYPES //
 
 #endif // CUSTOM_STRCMP_H_

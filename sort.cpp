@@ -1,58 +1,32 @@
 #include <cstdio>
+#include <cstdlib>
+#include <cstring>
 
 #include "customWarning/customWarning.h"
 #include "customStrcmp.h"
 #include "textStruct.h"
 #include "sort.h"
 
-int sort(textData *textData) {
-    customWarning(textData != NULL, 1);
-
-    indexDataInitialize(textData);
-    bubbleSort(textData);
-    bubbleReverseSort(textData);
-
-    return 0;
-}
-
-int bubbleSort(textData *textData) {
-    customWarning(textData != NULL, 1);
-
-    for (size_t i = 0; i < textData->lineCount - 1; i++) {
-        for (size_t j = 0; j < textData->lineCount - i - 1; j++) {
-            if (customStrcmp((textData->newLine)[(textData->sortedText)[j]    ],
-                             (textData->newLine)[(textData->sortedText)[j + 1]]) > 0) {
-                                swap(&(textData->sortedText)[j], &(textData->sortedText)[j + 1]);
-                             }
+void mySort(void *array, size_t arrayLength, size_t size, int (*comparator)(const void *first, const void *second)) {    
+    char *arrayData = (char *)array;
+    for (size_t firstIndex = 0; firstIndex < arrayLength; firstIndex++) {
+        for (size_t bubbleIndex = 0; bubbleIndex < arrayLength - firstIndex - 1; bubbleIndex++) {
+            if (comparator(arrayData + size * bubbleIndex, arrayData + size * (bubbleIndex + 1)) > 0) {
+                mySwap(arrayData + size * bubbleIndex, arrayData + size * (bubbleIndex + 1), size);
+            }
         }
     }
-
-    return 0;
 }
 
-int bubbleReverseSort(textData *textData) {
-    customWarning(textData != NULL, 1);
+void mySwap(void *firstElem, void *secondElem, size_t size) {
+    char *firstChar  = (char *)firstElem;
+    char *secondChar = (char *)secondElem;
 
-    for (size_t i = 0; i < textData->lineCount - 1; i++) {
-        for (size_t j = 0; j < textData->lineCount - i - 1; j++) {
-            if (customReverseStrcmp((textData->newLine)[(textData->reverseSortedText)[j] + 1],
-                             (textData->newLine)[(textData->reverseSortedText)[j + 1] + 1]) > 0) {
-                                swap(&(textData->reverseSortedText)[j], &(textData->reverseSortedText)[j + 1]);
-                             }
-        }
+    char temp = 0;
+
+    for (size_t index = 0; index < size; index++) {
+        temp = firstChar[index];
+        firstChar[index] = secondChar[index];
+        secondChar[index] = temp;
     }
-
-    return 0;
-}
-
-int swap(size_t *firstElement, size_t *secondElement) {
-    customWarning(firstElement  != NULL, 1);
-    customWarning(secondElement != NULL, 1);
-
-    size_t temp    = 0;
-    temp           = *firstElement;
-    *firstElement  = *secondElement;
-    *secondElement = temp;
-
-    return 0;
 }
