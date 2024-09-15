@@ -3,15 +3,19 @@
 
 #include <cstdio>
 
+enum fileErrors {
+    noSuchFile = -1
+};
+
 struct textLine {
     char *linePointer  = NULL;
     size_t lineSize    = 0;
 };
 
 struct textData {
-    ssize_t fileSize          = 0;
-    size_t lineCount          = 0;
-    char *text                = NULL;
+    ssize_t fileSize   = 0;
+    size_t lineCount   = 0;
+    char *text         = NULL;
 };
 
 // FUNCTION PROTOTYPES //

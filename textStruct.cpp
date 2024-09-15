@@ -9,18 +9,16 @@
 #include "sort.h"
 #include "customFree.h"
 #include "customStrcmp.h"
-
-enum fileErrors {
-    noSuchFile = -1
-};
+#include "outputText.h"
+#include "sortAndOutput.h"
 
 int textLinePoint(textData *textData, textLine *lineArray) {
-    customWarning(textData != NULL, 1);
+    customWarning(textData  != NULL, 1);
     customWarning(lineArray != NULL, 1);
 
     char *textPointer = textData->text;
 
-    size_t lineIndex = 0;
+    size_t lineIndex  = 0;
     lineArray[lineIndex].linePointer = textPointer;
 
     while (textPointer < textData->text + textData->fileSize) {
@@ -32,15 +30,6 @@ int textLinePoint(textData *textData, textLine *lineArray) {
             lineArray[lineIndex].linePointer  = textPointer + 1;
         }
     }
-
-    // /*/ CHECK textLine /*/
-    // for (size_t i = 0; i < textData->lineCount; i++) {
-    //     for (size_t j = 0; j < lineArray[i].lineSize; j++) {
-    //         printf("%c", *(lineArray[i].linePointer + j));
-    //     }
-    //     printf("\n");
-    // }
-    // /*/ CHECK textLine /*/
 
     return 0;
 }
@@ -84,42 +73,11 @@ int textDataInitialize(const char *fileName, textData *textData) {
     textLine *lineArray  = (textLine *)calloc(textData->lineCount, sizeof(textLine));
     textLineInitialize(textData, lineArray);
 
-    mySort(lineArray, textData->lineCount, sizeof(textLine), &customStrcmp);
-    /*/ CHECK SORTED TEXT /*/
-    for (size_t i = 0; i < textData->lineCount; i++) {
-        if (*(lineArray[i].linePointer) != '\n') {
-            for (size_t j = 0; j < lineArray[i].lineSize; j++) {
-                printf("%c", *(lineArray[i].linePointer + j));
-            }
-            printf("\n");
-        }
-    }
-    /*/ CHECK SORTED TEXT /*/
+    const char *outputFileName = "texts/oneginOutEng.txt";
 
-    printf("\n");
-
-    mySort(lineArray, textData->lineCount, sizeof(textLine), &customReverseStrcmp);
-    /*/ CHECK SORTED TEXT /*/
-    for (size_t i = 0; i < textData->lineCount; i++) {
-        if (*(lineArray[i].linePointer) != '\n') {
-            for (size_t j = 0; j < lineArray[i].lineSize; j++) {
-                printf("%c", *(lineArray[i].linePointer + j));
-            }
-            printf("\n");
-        }
-    }
-    /*/ CHECK SORTED TEXT /*/
-
-    printf("\n");
-
-    for (ssize_t index = 0; index < textData->fileSize; index++) {
-        if (index > 0 && textData->text[index] == '\n' && textData->text[index - 1] == '\n') {
-            continue;
-        }
-        else {
-            printf("%c", textData->text[index]);
-        }
-    }
+    sortAndOutput   (outputFileName, textData, lineArray, &customStrcmp);
+    sortAndOutput   (outputFileName, textData, lineArray, &customReverseStrcmp);
+    saveOriginalText(outputFileName, textData);
 
     /*/ QSORT /*/
 
