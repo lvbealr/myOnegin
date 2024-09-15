@@ -18,11 +18,5 @@ int main() {
     textData Onegin      = {};
     
     textDataInitialize(fileName, &Onegin);
-    
-    // if (!textDataInitialize(fileName, &Onegin)) {
-    //     putText(&Onegin);
-    // }
-
-    
     textDataDestruct(&Onegin);
 }
