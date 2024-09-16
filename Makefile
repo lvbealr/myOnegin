@@ -4,7 +4,7 @@ SRC          = main.cpp sortAndOutput.cpp outputText.cpp customStrcmp.cpp sort.c
 
 BUILD_DIR    = ./build/
 
-TARGET       = ONEGIN
+TARGET       = ONEGIN.exe
 OBJECT       = $(patsubst %.cpp, %.o, $(SRC))
 BUILD_OBJ    = $(addprefix $(BUILD_DIR), $(OBJECT))
 
