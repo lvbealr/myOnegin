@@ -15,4 +15,4 @@ int sortAndOutput(const char *outputFileName, textData *textData, textLine *line
     saveChangedText(outputFileName, textData, lineArray);
 
     return 0;
-}
+} 
