@@ -11,10 +11,6 @@
 
 typedef int (compareFunc)(const void *, const void *);
 
-// TODO FLAGS (-sort, -rstort, -orig, -all)
-// TODO myFree : free(&ptr) | *ptr = NULL;
-// CHECK QSORT() LOMUTO, HOARE
-
 static int sortAndOutput(const char *outputFileName, textData *textData, textLine *lineArray, compareFunc *comparator) {
     customWarning(outputFileName != NULL, 1);
     customWarning(textData       != NULL, 1);
