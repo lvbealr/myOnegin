@@ -3,8 +3,6 @@
 #include <cstring>
 
 #include "customWarning/customWarning.h"
-#include "customStrcmp.h" // TODO header is not used
-#include "textStruct.h"   // TODO header is not used
 #include "sort.h"
 
 void mySort(void *array, size_t arrayLength, size_t size, int (*comparator)(const void *first, const void *second)) {  
@@ -31,8 +29,8 @@ void mySwap(void *firstElem, void *secondElem, size_t size) {
     char temp = 0;
 
     for (size_t index = 0; index < size; index++) {
-        temp = firstChar[index];
-        firstChar[index] = secondChar[index];
+        temp              = firstChar[index];
+        firstChar[index]  = secondChar[index];
         secondChar[index] = temp;
     }
 }
