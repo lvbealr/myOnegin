@@ -110,9 +110,11 @@ THIS ARTICLE IS BEING EDITED...
 - [x] Rewrite Sorting Function With Parameters Like In A QSORT()
 - [x] Rewrite Two String Comparators (Forward & Backward)
 - [x] Original Text Is In textData->text
-- [ ] Define MyFree
+- [x] Move CustomWarning Into Git Submodule
+- [ ] Define MyFree (Optional)
+- [ ] Hoare QSort() (Optional)
 - [ ] Do Flags (-sort, -rsort, -orig, -all) (Optional)
-- [ ] Move CustomWarning Into Git Submodule
+
 
 ## ✍️ Authors <a name = "authors"></a>
 
