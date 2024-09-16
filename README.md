@@ -12,7 +12,7 @@
 - [Getting Started](#getting_started)
 - [Documentation](#documentation)
 - [Modes](#modes)
-- [Example Usage](#example_usage)
+- [Example Usage](#usage)
 - [Built Using](#built_using)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
