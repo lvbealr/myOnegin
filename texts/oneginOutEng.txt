@@ -448,6 +448,10 @@ And he went light
 And he will lead a baptized world
 And he will touch someone's heart.;
 And he worried her heart!
+And he's ashamed to recognize himself;
+And he's calling her to the cotillion.
+And he's insensitive to her
+And he's still a good member of the club,
 And hears a voice: well? dead.
 And her heart was far away
 And her voice sounds
@@ -458,10 +462,6 @@ And here is my hero,
 And here is one, one Tatiana!
 And here is the public opinion!
 And here she is in my garden
-And he's ashamed to recognize himself;
-And he's calling her to the cotillion.
-And he's insensitive to her
-And he's still a good member of the club,
 And his bones are at peace
 And his mother threatens him through the window
 And his song was clear,
@@ -1056,10 +1056,10 @@ But he finally fell out of love
 But he has completely cooled down to life.
 But he sulked in his corner,
 But he was wrong: Eugene
-But her husband loved her cordially,
-But here we congratulate you on your victory
 But he's certainly an honest guy.
 But he's not going; he's ahead of time
+But her husband loved her cordially,
+But here we congratulate you on your victory
 But hush! Do you hear? The critic is strict
 But I am sorry for the old sadness.
 But I am the fruit of my dreams
@@ -1071,7 +1071,6 @@ But I fell behind their union
 But I have no time for him now.
 But I, loving, was stupid and dumb.
 But I think I would like to
-But if morals didn't suffer,
 But I'll just tell you about it
 But I'm given to someone else.;
 But I'm not going to fight
@@ -1080,6 +1079,8 @@ But I'm on bail, Your Honor.,
 But I'm talking to our lady.
 But I'm tired of Didlo too.
 But I'm tired of him immensely.
+But I've read Adam Smith.
+But if morals didn't suffer,
 But in general their conversation
 But in the cities, in the villages
 But in the midst of sad rocks,
@@ -1092,7 +1093,6 @@ But it's really close. In front of them
 But it's sad to think that it's in vain
 But it's too late; it's time to go. It shrank
 But it's too late. The wind got cold.
-But I've read Adam Smith.
 But Lensky, of course, did not have,
 But maybe this kind of
 But more often they were occupied by passions
@@ -1916,15 +1916,49 @@ He, without ever reading,
 He woke up; they brought him
 He won't move, he won't die;
 He won't wait for the day to end again.
+He'll laugh.
+He'll rub the old man's laurels!
+He'll wake up in the afternoon, and again
+He's a chilling word
+He's a pharmacist; he drinks one
+He's always with her. In her peace
+He's angry, he's a gossip, he's a talker
+He's been playing since morning.
+He's bringing a terrible treasure home.
+He's busy with his Olga.
+He's calling as soon as possible. Runs in
+He's chasing her like a shadow.;
+He's completely forgotten us.
+He's familiar to me, he's my family.
+He's going home to get dressed.
+He's going to bed from the ball:
+He's going to shoot himself, thank God,
+He's gradually stiffening up,
+He's happy, he's almost healthy.
+He's happy if he throws it at her
+He's here! Eugene is here!
+He's in the hall; next: no one.
+He's leaving the yard,
+He's not embarrassed by anything,
+He's not here. They don't know me
+He's not suffering from consumption.
+He's on a two-ball pool table
+He's on his way; just let him in
+He's out loud, in lyrical heat,
+He's paying attention every minute
+He's preparing an elegy for her.
+He's probably not nicer.
+He's reading some kind of letter
+He's so used to getting lost in this,
+He's terribly unhappy.;
+He's the boss there, that's clear:
+He's writing a passionate message.
 Head profiles flicker
 Health, life color and sweetness,
 Hear my sad voice:
 Heavenly luminaries wondrous choir
 Hedgehog, darkness, bridge, bear, snowstorm
 Heeding the singing of mellifluous stanzas,
-He'll laugh.
-He'll rub the old man's laurels!
-He'll wake up in the afternoon, and again
 Her absent-minded laziness.
 Her bow was just as quiet.
 Her confidante is dear,
@@ -1970,48 +2004,14 @@ Here the skeleton is prim and proud,
 Here, to spite the spelling,
 Here under the window, wearing glasses,
 Here you will certainly find
-Hereditary enemies are like,
 Here's a cancer riding a spider,
 Here's a yard boy running around,
 Here's the gunpowder in a grayish trickle
 Here's the morning: everyone got up a long time ago,
 Here's the north, catching up with the clouds,
 Here's the time: good sloths,
+Hereditary enemies are like,
 Heroes of Whist; eight times
-He's a chilling word
-He's a pharmacist; he drinks one
-He's always with her. In her peace
-He's angry, he's a gossip, he's a talker
-He's been playing since morning.
-He's bringing a terrible treasure home.
-He's busy with his Olga.
-He's calling as soon as possible. Runs in
-He's chasing her like a shadow.;
-He's completely forgotten us.
-He's familiar to me, he's my family.
-He's going home to get dressed.
-He's going to bed from the ball:
-He's going to shoot himself, thank God,
-He's gradually stiffening up,
-He's happy, he's almost healthy.
-He's happy if he throws it at her
-He's here! Eugene is here!
-He's in the hall; next: no one.
-He's leaving the yard,
-He's not embarrassed by anything,
-He's not here. They don't know me
-He's not suffering from consumption.
-He's on a two-ball pool table
-He's on his way; just let him in
-He's out loud, in lyrical heat,
-He's paying attention every minute
-He's preparing an elegy for her.
-He's probably not nicer.
-He's reading some kind of letter
-He's so used to getting lost in this,
-He's terribly unhappy.;
-He's the boss there, that's clear:
-He's writing a passionate message.
 Hiding from the storms at last,
 High thoughts and simplicity;
 Highway Russia here and here,
@@ -2376,12 +2376,7 @@ I would prefer an offensive passion.
 I would still love balls.
 I would wear a quilted robe;
 I write, and my heart does not yearn,
-Ice skates soundly cuts the ice;
 I'd like to introduce you
-If only he knew what kind of wound it was
-If only I had the power,
-If only I were like you, a poet.
-If you were still with me,
 I'll at least give you a loan.
 I'll finish it after sometime.
 I'll go down into the mysterious canopy,
@@ -2390,7 +2385,6 @@ I'll note by the way: all poets
 I'll pay you back for it.
 I'll quarrel again, and finally
 I'll take a look at the house, at this garden.
-Illuminated by Diana's ray,
 I'm afraid: in my humble prayer
 I'm afraid: lingonberry water
 I'm always happy to notice the difference.
@@ -2426,6 +2420,23 @@ I'm swimming, dear friends!
 I'm through a magic crystal
 I'm waiting for you: with one eye
 I'm writing to you, what's more?
+I've accepted the receptions soon!
+I've already chosen him over him.
+I've already given up my fate.
+I've become clueless now.
+I've been fighting with the housekeeper for forty years,
+I've been putting up with ballets for a long time,
+I've been waiting impatiently for a long time;
+I've ruined a lot of my life!
+I've seen him, and I haven't seen him at all
+I've seen other freaks,
+I've stopped loving reading for a long time,
+Ice skates soundly cuts the ice;
+If only he knew what kind of wound it was
+If only I had the power,
+If only I were like you, a poet.
+If you were still with me,
+Illuminated by Diana's ray,
 Imagination is boiling again,
 Imagine: I'm here alone,
 Imagining herself to be a heroine?
@@ -2622,8 +2633,8 @@ Is your whole family healthy?
 Isn't everything in Russian
 Isn't it true? All her family
 Isn't it true: cute objects,
-Isn't it true? It wasn't news to you
 Isn't it true? I've heard you:
+Isn't it true? It wasn't news to you
 Isn't that right, friend? Not at all. Where to!
 Isn't that you, sweet vision,
 Istomina is standing; she,
@@ -2707,7 +2718,6 @@ It would not have attracted the eyes.
 It's a pity I don't have the time to drive around.;
 It's a pretty boring time;
 It's a wonderfully molded pattern
-Its age is brilliant and rebellious
 It's all in the wilderness; he's everywhere
 It's all settled: I'm at your will
 It's already been solved. Careless,
@@ -2722,7 +2732,6 @@ It's Christmas Eve. That's the joy!
 It's clearer now
 It's dark in the valley. The grove is sleeping
 It's easy to shine here.
-Its empty purpose is pathetic;
 It's excusable. Evgeniy,
 It's for the evening. God! to her!..
 It's getting clearer through the steam. There's a stream
@@ -2740,7 +2749,6 @@ It's no wonder to keep up everywhere.
 It's not good for a housewarming party,
 It's not the first time he's shown up here
 It's sad to bring medicine,
-Its seal is cut-out.
 It's spilling onto the shelf. Toothed,
 It's still cocked. For the near stump
 It's strange to her. I have devoted myself to honor
@@ -2760,20 +2768,12 @@ It's time to get up: it's past seven.
 It's time to leave boring breg
 It's too late; time has flown away
 It's unbearable to see in front of you
+Its age is brilliant and rebellious
+Its empty purpose is pathetic;
+Its seal is cut-out.
 Its with a disparate
 Ivan Petrovich is just as stupid,
 Ivan Petushkov too.
-I've accepted the receptions soon!
-I've already chosen him over him.
-I've already given up my fate.
-I've become clueless now.
-I've been fighting with the housekeeper for forty years,
-I've been putting up with ballets for a long time,
-I've been waiting impatiently for a long time;
-I've ruined a lot of my life!
-I've seen him, and I haven't seen him at all
-I've seen other freaks,
-I've stopped loving reading for a long time,
 Jam, eternal conversation
 Jam in jars, mattresses,
 Jealous without worrying about the flour,
@@ -3678,8 +3678,8 @@ So, to tell you the truth,
 So unapproachable for men,
 So we were carried away by a dream
 So you are inspired by Languages,
-So your faithful friend
 So you're married! I didn't know about the wound!
+So your faithful friend
 Solitude, silence:
 Some important general.
 Some kind of army pete
@@ -3698,8 +3698,8 @@ Sometimes he seemed more gentle,
 Sometimes he will meet you with a bow,
 Sometimes he won't notice at all:
 Sometimes, in late leisure
-Sometimes it is prudent to keep silent,
 Sometimes it 's prudent to quarrel,
+Sometimes it is prudent to keep silent,
 Sometimes she is instantly carried away:
 Sometimes talkative, sometimes mute,
 Sometimes, the flattering voice of light
@@ -3993,9 +3993,9 @@ The dashing droshky is being carried away
 The dawn rises in the cold darkness;
 The day is dear to me, the hour is dear to me:
 The day was getting shorter,
+The day's ray will flash in the morning
 The days counted by fate.
 The days raced by; the air was heated
-The day's ray will flash in the morning
 The deadline is also passing.
 The death of the old man's uncle.
 The deceased was buried.
@@ -4102,8 +4102,8 @@ The light and the noisy ball are forgotten,
 The light shirt came down
 The longing of a troubled soul?
 The longing of love drives Tatiana away,
-The lords of the neighboring villages
 The Lord's slave and foreman,
+The lords of the neighboring villages
 The loss of life is the best color.
 The love of an innocent virgin breathes.
 The mad soul of a poet
@@ -4139,9 +4139,9 @@ The name of the fervent players
 The neighbor decided.
 The neighbor is called to the samovar,
 The neighbor sniffs in front of the neighbor;
+The neighbor's monument is humble,
 The neighbors are whispering among themselves:
 The neighbors gathered in carts,
-The neighbor's monument is humble,
 The new landowner rode in
 The newest Regulus, the god of honor,
 The night has many lovely stars,
@@ -4789,25 +4789,25 @@ We will multiply the price of love,
 We will revive it with Jealous fire;
 We will torment the heart, and then
 We will wilfully sanctify.
+We'd better hurry to the ball,
+We'll break up for this, I'm sorry!
+We'll show Tanya tomorrow.
+We're all looking at the Napoleons.;
 Weaning our hearts from praise,
 Wearing a wide bolivar,
 Wearing glasses and a red wig.
-We'd better hurry to the ball,
 Weeping bitterly,
 Well, a lot of good stuff.
-We'll break up for this, I'm sorry!
 Well, exactly the same as it was.
 Well, he says, you tell me,
 Well? I found a secret charm
 Well, if your gun
 Well, Mother? What happened?
 Well, my poor style
-We'll show Tanya tomorrow.
 Well, what about it?
 Well, what about the neighbors? What is Tatiana?
 Well? You're going: it's a pity.
 Went and what? The bear is after her!
-We're all looking at the Napoleons.;
 Were you in love then?
 Wet nurses cry and cry of children.
 What a bitter contempt
@@ -4859,12 +4859,12 @@ What was the consequence of the date?
 What was the difference for him
 What will he present to us so far?
 What will it be now? Melmotte,
-Whatever he notices or hears
 What's in them? I'm glad to give it back now
 What's tomorrow Lensky and Evgeny
 What's waiting for him there?
 What's wrong with him? What a strange dream he's in!
 What's your name? He's watching
+Whatever he notices or hears
 When a simple product has.
 When and where, in what desert,
 When churches and bell towers,
@@ -5011,8 +5011,8 @@ Who won't cheat on us alone?
 Who won't get tired of threats,
 Who would dare to look for a gentle girl
 Who would have thought? How long ago!
-Whoever you are, oh my reader,
 Who's there in the crimson beret
+Whoever you are, oh my reader,
 Whose benevolent hand
 Whose gaze, stirring inspiration,
 Whose head is not spinning,
@@ -5200,6 +5200,14 @@ You won't find it in you, the light is empty.
 You won't leave me.
 You would never know,
 You'll have to resurrect it from everywhere:
+You're bigger somehow. No, it's the same.
+You're in a blaze of hope.
+You're in the hands of a fashionable tyrant
+You're invited to them next week.
+You're not listening to me.
+You're not sick at all:
+You're right, and you'll point us out correctly
+You're the one I've been drunk on!
 Your creations? They say,
 Your face is like the color of poppies.
 Your gun then Eugene,
@@ -5215,14 +5223,6 @@ Your tempter is fatal.
 Your trusting conscience
 Your voice sounded in my soul
 Your wonderful look tormented me,
-You're bigger somehow. No, it's the same.
-You're in a blaze of hope.
-You're in the hands of a fashionable tyrant
-You're invited to them next week.
-You're not listening to me.
-You're not sick at all:
-You're right, and you'll point us out correctly
-You're the one I've been drunk on!
 Zaretsky,
 Zaretsky bit his lip.
 Zaretsky carefully puts
@@ -5341,8 +5341,8 @@ And hears a voice: well? dead.
 Bowing his tired head,
 And a wayward head,
 She sits with a drooping head
-And he bows his head
 The other one with a rooster's head,
+And he bows his head
 To him with a guilty head.
 In that pile, see? ahead,
 And quietly aim at the pale forehead
@@ -6221,10 +6221,10 @@ To see this Phyllida for me,
 He was expecting Olga for me.,
 But the north is bad for me.
 What does the coming day have in store for me?
+Howling foolishly: it's me!
 No one understands me,
 I can't understand him; it bothers me
 But you miss me
-Howling foolishly: it's me!
 She wouldn't hurt me.
 And it's time to come without me;
 Come here, follow me.
@@ -6244,8 +6244,8 @@ He looked at the menacing flame.
 For the first time with such a name
 Suddenly it stops. About one name
 They did not know needles; leaning on an embroidery frame,
-The boredom in the village is the same,
 You're bigger somehow. No, it's the same.
+The boredom in the village is the same,
 Just to spend time,
 Her walks last a fraction of the time.
 And dinner. We know the time
@@ -6277,12 +6277,12 @@ Have I forgotten for you for a long time
 I've been waiting impatiently for a long time;
 Blessed is he who matured in time,
 I remember another time!
-He remembered it was time,
-In the wilderness, what to do at this time?
 The vaunted grandfather's time:
 It would have been a long time ago (wouldn't it?) It's time!
 It's time, it's time!
 He looks and sees that it's time
+He remembered it was time,
+In the wilderness, what to do at this time?
 To walk? The village of that time
 I became friends with him at that time.
 There was also a groom at that time
@@ -6372,8 +6372,8 @@ Where Terpsichore is the only one
 And that mediocrity is the only one
 Horns and fingers are made of bone,
 The soul was waiting for someone,
-And where, God knows. The trace was gone.
 That's gone
+And where, God knows. The trace was gone.
 Where, where have you gone,
 Fonvizin, a friend of freedom, shone,
 I was busy with Tatiana alone,
@@ -6384,9 +6384,9 @@ To read books here alone.
 Accessible to feeling alone;
 Both in the afternoon and in the evening alone;
 The Princess is in front of him, alone,
+And then she's alone
 Rushing through the fields alone,
 Yes, she wanders through the woods alone.
-And then she's alone
 Sorry. And here she is alone.
 In the desert, where Eugene is alone
 There is a long row of dinners alone,
@@ -6505,8 +6505,8 @@ Will I see the Russian Terpsichore
 Affectation, nothing more.
 She liked him much more:
 He was not interested in more;
-From hour to hour the captive is more
 I'm writing to you, what's more?
+From hour to hour the captive is more
 In which the author knows more
 They captivated her heart more.
 And she has no strength to run anymore.
@@ -6702,6 +6702,7 @@ The conversation began to revive;
 That there are no awards in the world above.
 In front of her in the hall, and all above
 Habit is given to us from above:
+Until now, ladies' love
 Scaring timid love,
 Remembering the old love,
 Enmity, hope and love,
@@ -6726,11 +6727,10 @@ He sang love, obedient to love,
 Ah, maybe her love
 Spring, spring! It's time for love!
 Longing for love,
+A humble girl's love?
 His pen breathes love,
-Until now, ladies' love
 About Olga: such is love!
 The care of youth is love?
-A humble girl's love?
 And a wreath of sweet love
 We haven't heard about love;
 A picture of happy love.
@@ -7394,8 +7394,8 @@ Rushing, he wants to scream:
 Meets the morning of the year through a dream;
 But Tanya, just like in a dream,
 She's stuffy here, she's a dream
-That girl, or is it a dream?..
 Not for a long time, it wasn't a dream!
+That girl, or is it a dream?..
 She is disturbed by a dream.
 So we were carried away by a dream
 In the midst of a poetic dream
@@ -7519,8 +7519,8 @@ What was the difference for him
 Lunch won't ring for him.
 In a moment that was evil for him,
 The purpose of our life is for him
-But one thought surrounds him;
 She said: It's him!
+But one thought surrounds him;
 The Princess looks at him
 Where Tatiana met him.
 He woke up; they brought him
@@ -7578,8 +7578,8 @@ Clothed in a dull romanticism
 The idea of rural witticism!)
 Poems of the Russian mechanism
 And for sure: by the power of magnetism
-County young ladies album,
 In Olga Molodoy's album;
+County young ladies album,
 In those days when in the gardens of the Lyceum
 And young fever and young delirium.
 Leaving a cup of tea with rum,
@@ -7661,8 +7661,8 @@ More tired footmen
 Meanwhile, we, the enemies of Hymen,
 The subject of both thoughts and pen,
 Yawning, he took up the pen,
-It did not come out of his pen,
 Or Baratynsky's pen,
+It did not come out of his pen,
 And there he walks in the open,
 The green tables are open:
 The shutters are open;
@@ -8090,9 +8090,9 @@ Not knowing what to start with fear,
 Read in Russian. Really, fear!
 Prayers, vows, imaginary fear,
 Poetry is alive and clear,
+He's the boss there, that's clear:
 And his song was clear,
 The night is frosty, the whole sky is clear;
-He's the boss there, that's clear:
 You know, I'm not clear
 A simple inscription and a tear
 He shone with an obedient tear!
@@ -8446,6 +8446,10 @@ That they cheated on her every hour,
 I'm ready to break out every hour.
 Jealous without worrying about the flour,
 And Werther, the rebellious martyr,
+At Pelageya Nikolaevna's
+That girl he's
+For a long time forever. It's
+I met Tanya at the boring aunt's,
 He was already opening his vasisdas.
 Without elegiac ideas
 And harmonic ideas
@@ -8454,7 +8458,6 @@ She opened a feast of young ideas,
 Rural freedom has
 When a simple product has.
 Under the canopy of cherry trees and acacias
-At Pelageya Nikolaevna's
 Ah, brothers! How pleased I was,
 How languidly silent he was,
 No matter how strong she was
@@ -8583,7 +8586,6 @@ So you are inspired by Languages,
 For sparse, strange languages,
 In the maid's garden, on the ridges,
 (resolute and strict judges)
-That girl he's
 According to the stories of young moustaches,
 The flashing of dresses and speeches,
 At least the sound of the speeches
@@ -9259,7 +9261,6 @@ Having connected, they will cross.
 I was running after a nice fuss.
 And before the roaring abyss,
 Her heart feels tight, like an abyss
-For a long time forever. It's
 Who won't get tired of threats,
 And, Phoebe's defying threats,
 The rite of famous treats:
@@ -9328,7 +9329,6 @@ Children's appointments
 To present to the grandparents
 She is humble tents
 Tatiana in the short table of contents
-I met Tanya at the boring aunt's,
 Two pine trees have grown together by their roots;
 The husband comes. He interrupts
 The neighbors gathered in carts,
@@ -9468,6 +9468,9 @@ Dawn from the morning valleys
 Sorry, peaceful valleys,
 In those days in the mysterious valleys,
 I know: Gentle Guys
+It's called idag. (I can't
+She's penetrated; she can't
+Oh, listen, Lensky; but you can't
 And for the journalists to eat
 The evil mouth did not eat
 She is trembling and bursting with heat,
@@ -9620,9 +9623,9 @@ Is there a killing every night?
 And the morning turns at midnight,
 First of all (listen, am I right?),
 And he was purring: You're right.
+You guessed it; that's right:
 Five hundred years later) roads, right,
 There is no need; the law of fate is right.
-You guessed it; that's right:
 Take it and find it right
 That's what the young rake thought,
 That's exactly what my Eugene thought.
@@ -9661,10 +9664,10 @@ The morning snow crunches under it.
 It's black and noisy under it
 He was puzzling over it
 I'll pay you back for it.
+She's sitting there and that's it!..
 Right up to the girlish. Everyone needs it
 She searches for it and finds it
 Diligently decorates it:
-She's sitting there and that's it!..
 Although we don't want to admit it.
 I wanted to limit it;
 Suddenly he really got it
@@ -9691,9 +9694,6 @@ Tatiana silk belt
 How castles should be built:
 The venerable castle was built,
 Sit down as it is difficult!
-It's called idag. (I can't
-She's penetrated; she can't
-Oh, listen, Lensky; but you can't
 A learned fellow, but a pedant:
 In duels, the classic and the pedant,
 Everything for the whim of the abundant
@@ -10135,8 +10135,8 @@ Or it will fly by,
 I measured it with excellent accuracy,
 Yes, maybe the fear of secrecy,
 She is plunged into despondency,
-He believed that his friends were ready
 They want to drip; they're ready
+He believed that his friends were ready
 Scare with desperation ready,
 The cross-country sled is ready.
 He said he was always ready.
