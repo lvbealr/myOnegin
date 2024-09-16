@@ -3,8 +3,8 @@
 #include <cstring>
 
 #include "customWarning/customWarning.h"
-#include "customStrcmp.h"
-#include "textStruct.h"
+#include "customStrcmp.h" // TODO header is not used
+#include "textStruct.h"   // TODO header is not used
 #include "sort.h"
 
 void mySort(void *array, size_t arrayLength, size_t size, int (*comparator)(const void *first, const void *second)) {  

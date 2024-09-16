@@ -6,7 +6,7 @@
 
 #include "textStruct.h"
 #include "customWarning/customWarning.h"
-#include "sort.h"
+#include "sort.h" // TODO header is not used
 #include "customFree.h"
 #include "customStrcmp.h"
 #include "outputText.h"
