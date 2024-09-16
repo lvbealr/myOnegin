@@ -14,7 +14,7 @@
 - [Modes](#modes)
 - [Example Usage](#example_usage)
 - [Built Using](#built_using)
-- [Authors](#authors)
+- [Authors](#authors)V
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
@@ -24,7 +24,7 @@ V. G. Belinsky called the poem "Eugene Onegin" by A. S. Pushkin "an encyclopedia
 **COMPARE ORDERED AND UNORDERED TEXT! WHICH'S BETTER?**
 
 <p align="center">
-  <img src = "https://i.imgur.com/aGemPWb.png" width=400>
+  <img src = "https://i.imgur.com/955BJji.png" width=400>
   <img src = "https://i.imgur.com/d18eCLQ.png" width=400>
 </p>
 
@@ -63,7 +63,7 @@ The program will start in manual mode and ask you to enter data for correct oper
 
 THIS ARTICLE IS BEING EDITED...
 
-For convenient use of the program, [Doxygen documentation](https://i.imgur.com/cszI6HX.png) is included with the project.
+For convenient use of the program, [Doxygen documentation](https://lvbealr.github.io/) is included with the project.
 
 ## 🔧 MODES <a name = "modes"></a>
 
@@ -73,80 +73,30 @@ THIS ARTICLE IS BEING EDITED...
 
 THIS ARTICLE IS BEING EDITED...
 
-### MANUAL MODE
-
+### DEFAULT MODE
 ```bash
-./main
+./ONEGIN
 
-Input values of coefficients a, b, c: 3 4 -5
-D > 0
-Solutions: -2.11963	0.7863	
+# /texts/oneginOutEng.txt >>
+#
+# A bad turn has come!
+# A barely born day.
+# A barely noticeable stream
+# A bearded postilion is sitting,
+# ...
+# Neither Scott, nor Byron, nor Seneca,
+# Under the sky of my Africa,
+# The incessant whisper of Nereida,
+# How often is it on the shores of Taurida
+# ...
+# Not thinking to amuse the proud light,
+# The attention of the friendship of the beloved,
+# I'd like to introduce you
+# The pledge is worthier than you,
+# ...
 ```
-
-### TEST MODE
-```bash
-./main --test
-
-Test   1: [SUCCESS]
-
-Test   2: [SUCCESS]
-
-Test   3: [SUCCESS]
-
-Test   4: [SUCCESS]
-
-Test   5: [SUCCESS]
-
-Test   6: [SUCCESS]
-
-Test   7: [SUCCESS]
-
-Test   8: [SUCCESS]
-
-Test   9: [SUCCESS]
-
-Test  10: [SUCCESS]
-	
-```
-
-### GOOGLE TEST MODE
-```bash
-./main --gtest
-[==========] Running 10 tests from 1 test suite.
-[----------] Global test environment set-up.
-[----------] 10 tests from QUADRATIC_EQUATION
-[ RUN      ] QUADRATIC_EQUATION.ALL_NULLS_SUCCESS
-[       OK ] QUADRATIC_EQUATION.ALL_NULLS_SUCCESS (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.ALL_NULLS_EXCEPT_C_SUCCESS
-[       OK ] QUADRATIC_EQUATION.ALL_NULLS_EXCEPT_C_SUCCESS (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.A_IS_NULL_SUCCESS
-[       OK ] QUADRATIC_EQUATION.A_IS_NULL_SUCCESS (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.A_IS_NULL_SUCCESS_1
-[       OK ] QUADRATIC_EQUATION.A_IS_NULL_SUCCESS_1 (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.D_LESS_NULL_SUCCESS
-[       OK ] QUADRATIC_EQUATION.D_LESS_NULL_SUCCESS (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.D_LESS_NULL_SUCCESS_1
-[       OK ] QUADRATIC_EQUATION.D_LESS_NULL_SUCCESS_1 (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.D_EQUAL_NULL_SUCCESS
-[       OK ] QUADRATIC_EQUATION.D_EQUAL_NULL_SUCCESS (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.D_EQUAL_NULL_SUCCESS_1
-[       OK ] QUADRATIC_EQUATION.D_EQUAL_NULL_SUCCESS_1 (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.D_GREATER_NULL_SUCCESS
-[       OK ] QUADRATIC_EQUATION.D_GREATER_NULL_SUCCESS (0 ms)
-[ RUN      ] QUADRATIC_EQUATION.D_GREATER_NULL_SUCCESS_1
-[       OK ] QUADRATIC_EQUATION.D_GREATER_NULL_SUCCESS_1 (0 ms)
-[----------] 10 tests from QUADRATIC_EQUATION (0 ms total)
-
-[----------] Global test environment tear-down
-[==========] 10 tests from 1 test suite ran. (0 ms total)
-[  PASSED  ] 10 tests.
-
-```
-
-
 ## ⛏️ Built Using <a name = "built_using"></a>
-THIS ARTICLE IS BEING EDITED...
-- [Google C++ Testing Framework](https://github.com/google/googletest) - Testing Framework
+- [customWarning](https://github.com/lvbealr/customWarning) - Warning Module
 
 ## ✍️ Authors <a name = "authors"></a>
 
