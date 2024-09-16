@@ -9,7 +9,6 @@
 #include "customFree.h"
 #include "customStrcmp.h"
 #include "outputText.h"
-#include "sortAndOutput.h"
 
 int textLinePoint(textData *textData, textLine *lineArray) {
     customWarning(textData  != NULL, 1);
@@ -56,29 +55,25 @@ int textDataInitialize(const char *fileName, textData *textData) {
     struct stat fileData;
     stat(fileName, &fileData);
 
-    textData->fileSize   = (ssize_t)fileData.st_size;
+    textData->fileSize = (ssize_t)fileData.st_size;
 
-    textData->text       = (char *)calloc((size_t)textData->fileSize, sizeof(char));
+    textData->text = (char *)calloc((size_t)textData->fileSize, sizeof(char));
 
     int openFile = open(fileName, O_RDONLY);
     customWarning(openFile != noSuchFile, 1);
 
-    ssize_t sizeRead     = read(openFile, textData->text, (size_t)textData->fileSize); 
+    ssize_t sizeRead = read(openFile, textData->text, (size_t)textData->fileSize); 
 
     customWarning(sizeRead == textData->fileSize, 1);
 
     close(openFile);
 
-    textData->lineCount  = lineCounter(textData);
+    textData->lineCount = lineCounter(textData);
 
-    textLine *lineArray  = (textLine *)calloc(textData->lineCount, sizeof(textLine));
+    textLine *lineArray = (textLine *)calloc(textData->lineCount, sizeof(textLine));
+    textData->lineArray = lineArray;
+
     textLineInitialize(textData, lineArray);
-
-    const char *outputFileName = "texts/oneginOutEng.txt";
-
-    sortAndOutput   (outputFileName, textData, lineArray, &customStrcmp);
-    sortAndOutput   (outputFileName, textData, lineArray, &customReverseStrcmp);
-    saveOriginalText(outputFileName, textData);
 
     return (openFile <= 0); // openFile returns -1 by error, so textDataInitialize returns 0 by success and 1 by error
 }
@@ -86,8 +81,8 @@ int textDataInitialize(const char *fileName, textData *textData) {
 int textDataDestruct(textData *textData) {
     customWarning(textData != NULL, 1);
 
-    textData->fileSize          = 0;
-    textData->lineCount         = 0;
+    textData->fileSize  = 0;
+    textData->lineCount = 0;
 
     free(textData->text);
 
@@ -97,7 +92,7 @@ int textDataDestruct(textData *textData) {
 size_t lineCounter(textData *textData) {
     customWarning(textData != NULL, 1);
 
-    size_t lineCount  = 0; 
+    size_t lineCount = 0; 
 
     char *textPointer = textData->text;
     while (textPointer < textData->text + textData->fileSize) {

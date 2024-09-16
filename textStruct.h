@@ -23,9 +23,10 @@ struct textLine {
  * @brief Text Of File Struct
  */
 struct textData {
-    ssize_t fileSize   = 0;    /** File Size (In Byte) */
-    size_t lineCount   = 0;    /** Lines Number Of Text */
-    char *text         = NULL; /** Pointer To The Beggining Of The Text */
+    ssize_t   fileSize  = 0;    /** File Size (In Byte) */
+    size_t    lineCount = 0;    /** Lines Number Of Text */
+    char     *text      = NULL; /** Pointer To The Beggining Of The Text */
+    textLine *lineArray = NULL; /** Pointer To The Text Lines Array */
 };
 
 // FUNCTION PROTOTYPES //
