@@ -1,6 +1,8 @@
 #ifndef OUTPUT_TEXT_H_
 #define OUTPUT_TEXT_H_
 
+#include "textStruct.h"
+
 // FUNCTION PROTOTYPES //
 /**
  * @brief Save Changed (Forward / Backward Sorted) Text Into File 
