@@ -6,7 +6,6 @@
 
 #include "textStruct.h"
 #include "customWarning/customWarning.h"
-#include "customFree.h"
 #include "customStrcmp.h"
 #include "outputText.h"
 
@@ -85,6 +84,7 @@ int textDataDestruct(textData *textData) {
     textData->lineCount = 0;
 
     free(textData->text);
+    textData->text = NULL;
 
     return 0;
 }
