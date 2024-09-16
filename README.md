@@ -14,7 +14,7 @@
 - [Modes](#modes)
 - [Example Usage](#example_usage)
 - [Built Using](#built_using)
-- [Authors](#authors)V
+- [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
@@ -70,8 +70,6 @@ For convenient use of the program, [Doxygen documentation](https://lvbealr.githu
 THIS ARTICLE IS BEING EDITED...
 
 ## 🎈 Example Usage <a name="usage"></a>
-
-THIS ARTICLE IS BEING EDITED...
 
 ### DEFAULT MODE
 ```bash
