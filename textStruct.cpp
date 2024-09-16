@@ -6,7 +6,6 @@
 
 #include "textStruct.h"
 #include "customWarning/customWarning.h"
-#include "sort.h" // TODO header is not used
 #include "customFree.h"
 #include "customStrcmp.h"
 #include "outputText.h"
@@ -18,7 +17,7 @@ int textLinePoint(textData *textData, textLine *lineArray) {
 
     char *textPointer = textData->text;
 
-    size_t lineIndex  = 0;
+    size_t lineIndex = 0;
     lineArray[lineIndex].linePointer = textPointer;
 
     while (textPointer < textData->text + textData->fileSize) {
@@ -80,13 +79,6 @@ int textDataInitialize(const char *fileName, textData *textData) {
     sortAndOutput   (outputFileName, textData, lineArray, &customStrcmp);
     sortAndOutput   (outputFileName, textData, lineArray, &customReverseStrcmp);
     saveOriginalText(outputFileName, textData);
-
-    /*/ QSORT /*/
-
-    // qsort(lineArray, textData->lineCount, sizeof(textLine), &customStrcmp);
-    // qsort(lineArray, textData->lineCount, sizeof(textLine), &customReverseStrcmp);
-
-    /*/ QSORT /*/
 
     return (openFile <= 0); // openFile returns -1 by error, so textDataInitialize returns 0 by success and 1 by error
 }
