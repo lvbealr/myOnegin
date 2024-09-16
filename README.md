@@ -43,6 +43,12 @@ cd myOnegin/
 
 ### Build and Using
 
+First of all, clone submodule <b>CustomWarning</b>.
+
+```bash
+git clone git@github.com:lvbealr/customWarning.git
+```
+
 You can use <b>MAKE</b> to build the program and run it.
 
 Enter the following command in the terminal:
