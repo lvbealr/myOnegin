@@ -1,6 +1,6 @@
 CXX          = g++
 
-SRC          = main.cpp sortAndOutput.cpp outputText.cpp customStrcmp.cpp sort.cpp textStruct.cpp
+SRC          = main.cpp outputText.cpp customStrcmp.cpp sort.cpp textStruct.cpp
 
 BUILD_DIR    = ./build/
 
