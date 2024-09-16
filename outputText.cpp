@@ -18,6 +18,7 @@ int saveChangedText(const char *fileName, textData *textData, textLine *lineArra
             putc('\n', outputFile);
         }
     }
+    putc('\n', outputFile);
     fclose(outputFile);
 
     return 0;
