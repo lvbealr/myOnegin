@@ -14,6 +14,7 @@
 - [Modes](#modes)
 - [Example Usage](#usage)
 - [Built Using](#built_using)
+- [TODO List](#todo)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
@@ -101,6 +102,17 @@ THIS ARTICLE IS BEING EDITED...
 ```
 ## ⛏️ Built Using <a name = "built_using"></a>
 - [customWarning](https://github.com/lvbealr/customWarning) - Warning Module
+
+## ⌛ TODO List <a name = "todo"></a>
+- [x] Create Struct, That Contains Pointer To Line And Line Length
+- [x] Remove Three Calloc's In TextStruct (Do Use TextLine Array)
+- [x] TextLine Array Initializing, Rewrite NewLinePoint Function
+- [x] Rewrite Sorting Function With Parameters Like In A QSORT()
+- [x] Rewrite Two String Comparators (Forward & Backward)
+- [x] Original Text Is In textData->text
+- [ ] Define MyFree
+- [ ] Do Flags (-sort, -rsort, -orig, -all) (Optional)
+- [ ] Move CustomWarning Into Git Submodule
 
 ## ✍️ Authors <a name = "authors"></a>
 
