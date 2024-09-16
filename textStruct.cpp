@@ -35,7 +35,8 @@ int textLinePoint(textData *textData, textLine *lineArray) {
 }
 
 int textLineInitialize(textData *textData, textLine *lineArray) {
-    customWarning(textData != NULL, 1);
+    customWarning(textData  != NULL, 1);
+    customWarning(lineArray != NULL, 1);
 
     return !(textLinePoint(textData, lineArray));
 }
@@ -50,6 +51,7 @@ int textLineDestruct(textLine *lineArray) {
 }
 
 int textDataInitialize(const char *fileName, textData *textData) {
+    customWarning(fileName != NULL, 1);
     customWarning(textData != NULL, 1);
 
     struct stat fileData;

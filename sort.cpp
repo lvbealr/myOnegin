@@ -7,7 +7,10 @@
 #include "textStruct.h"
 #include "sort.h"
 
-void mySort(void *array, size_t arrayLength, size_t size, int (*comparator)(const void *first, const void *second)) {    
+void mySort(void *array, size_t arrayLength, size_t size, int (*comparator)(const void *first, const void *second)) {  
+    customWarning(array      != NULL, (void) 1);
+    customWarning(comparator != NULL, (void) 1);
+
     char *arrayData = (char *)array;
     for (size_t firstIndex = 0; firstIndex < arrayLength; firstIndex++) {
         for (size_t bubbleIndex = 0; bubbleIndex < arrayLength - firstIndex - 1; bubbleIndex++) {
@@ -19,6 +22,9 @@ void mySort(void *array, size_t arrayLength, size_t size, int (*comparator)(cons
 }
 
 void mySwap(void *firstElem, void *secondElem, size_t size) {
+    customWarning(firstElem  != NULL, (void) 1);
+    customWarning(secondElem != NULL, (void) 1);
+
     char *firstChar  = (char *)firstElem;
     char *secondChar = (char *)secondElem;
 

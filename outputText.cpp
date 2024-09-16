@@ -3,6 +3,10 @@
 #include "customWarning/customWarning.h"
 
 int saveChangedText(const char *fileName, textData *textData, textLine *lineArray) {
+    customWarning(fileName   != NULL, 1);
+    customWarning(textData   != NULL, 1);
+    customWarning(lineArray  != NULL, 1);
+
     FILE *outputFile = fopen(fileName, "a");
     customWarning(outputFile != NULL, 1);
 
@@ -20,6 +24,9 @@ int saveChangedText(const char *fileName, textData *textData, textLine *lineArra
 }
 
 int saveOriginalText(const char *fileName, textData *textData) {
+    customWarning(fileName   != NULL, 1);
+    customWarning(textData   != NULL, 1);
+
     FILE *outputFile = fopen(fileName, "a");
     customWarning(outputFile != NULL, 1);
 
