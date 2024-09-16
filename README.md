@@ -24,8 +24,8 @@ V. G. Belinsky called the poem "Eugene Onegin" by A. S. Pushkin "an encyclopedia
 **COMPARE ORDERED AND UNORDERED TEXT! WHICH'S BETTER?**
 
 <p align="center">
-  <img src = "https://i.imgur.com/955BJji.png" width=400>
-  <img src = "https://i.imgur.com/d18eCLQ.png" width=400>
+  <img src = "https://i.imgur.com/955BJji.png" width=400 height=350>
+  <img src = "https://i.imgur.com/d18eCLQ.png" width=400 height=350>
 </p>
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
