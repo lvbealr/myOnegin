@@ -23,6 +23,7 @@ int saveChangedText(const char *fileName, textData *textData, textLine *lineArra
     return 0;
 }
 
+// TODO create two textLine * arrays (one for default text and one for sorted text)
 int saveOriginalText(const char *fileName, textData *textData) {
     customWarning(fileName   != NULL, 1);
     customWarning(textData   != NULL, 1);
