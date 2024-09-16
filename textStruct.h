@@ -8,7 +8,7 @@
  * 
  */
 enum fileErrors {
-    noSuchFile = -1            // File Does Not Exist 
+    noSuchFile = -1            /** File Does Not Exist */
 };
 
 /**
