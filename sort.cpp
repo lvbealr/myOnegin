@@ -5,7 +5,7 @@
 #include "customWarning/customWarning.h"
 #include "sort.h"
 
-void mySort(void *array, size_t arrayLength, size_t size, int (*comparator)(const void *first, const void *second)) {  
+void mySort(void *array, size_t arrayLength, size_t size, compareFunc *comparator) {  
     customWarning(array      != NULL, (void) 1);
     customWarning(comparator != NULL, (void) 1);
 

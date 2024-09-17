@@ -1,6 +1,8 @@
 #ifndef SORT_H_
 #define SORT_H_
 
+typedef int (compareFunc)(const void *, const void *);
+
 // FUNCTION PROTOTYPES //
 /**
  * @brief Universal Sorting Of Different Data Types
@@ -11,7 +13,7 @@
  * @param comparator Pointer To Comparing Function
  */
 void mySort(void *array, size_t arrayLength, size_t size,
-            int (*comparator)(const void *firstElem, const void *secondElem));
+            compareFunc comparator);
             
 /**
  * @brief Universal Swapping Of Different Data Types
