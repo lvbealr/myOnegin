@@ -42,4 +42,4 @@ ded : $(SRC)
 	$(CXX) $^ -o $(TARGET) $(DED_FLAGS)
 
 clean :
-	rm -f -r $(addprefix $(BUILD_DIR), *.o $(TARGET) *.dSYM)
+	rm -f -r $(addprefix $(BUILD_DIR), *.o $(TARGET)) 
