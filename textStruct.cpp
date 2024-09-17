@@ -99,6 +99,7 @@ size_t lineCounter(textData *textData) {
         if (*textPointer == '\n') {
             lineCount++;
         }
+        
         textPointer++;
     }
     

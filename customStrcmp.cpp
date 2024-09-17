@@ -35,10 +35,12 @@ int customStrcmp(const void *firstElem, const void *secondElem) {
                 asciiDiff += tolower(firstElement) - tolower(secondElement);
                 firstIndex++; secondIndex++;
             }
+
             else {
                 secondIndex++;
             }
         }
+
         else {
             firstIndex++;
         }
@@ -78,10 +80,12 @@ int customReverseStrcmp(const void *firstElem, const void *secondElem) {
                 asciiDiff += firstElement - secondElement;
                 firstIndex--; secondIndex--;
             }
+
             else {
                 secondIndex--;
             }
         }
+        
         else {
             firstIndex--;
         }

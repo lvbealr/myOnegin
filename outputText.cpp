@@ -35,10 +35,12 @@ int saveOriginalText(const char *fileName, textData *textData) {
         if (symbol > 0 && textData->text[symbol] == '\n' && textData->text[symbol - 1] == '\n') {
             continue;
         }
+
         else {
             putc(textData->text[symbol], outputFile);
         }
     }
+
     fclose(outputFile);
 
     return 0;
