@@ -113,7 +113,7 @@ THIS ARTICLE IS BEING EDITED...
 - [ ] Hoare QSort() (Optional)
 - [ ] Do Flags (-sort, -rsort, -orig, -all) (Optional)
 - [ ] Flag -o To Enter Output File Name
-- [ ] Struct To Describe Flags
+- [ ] Struct To Describe Flags (Check getopt MAN)
 
 
 ## ✍️ Authors <a name = "authors"></a>
