@@ -114,6 +114,8 @@ THIS ARTICLE IS BEING EDITED...
 - [ ] Do Flags (-sort, -rsort, -orig, -all) (Optional)
 - [ ] Flag -o To Enter Output File Name
 - [ ] Struct To Describe Flags (Check getopt MAN)
+- [ ] sscanf To Eat Flags Values (--sort=123). How Eat 123?
+- [ ] Flags Struct Array
 
 
 ## ✍️ Authors <a name = "authors"></a>
