@@ -112,6 +112,8 @@ THIS ARTICLE IS BEING EDITED...
 - [ ] Define MyFree (Optional)
 - [ ] Hoare QSort() (Optional)
 - [ ] Do Flags (-sort, -rsort, -orig, -all) (Optional)
+- [ ] Flag -o To Enter Output File Name
+- [ ] Struct To Describe Flags
 
 
 ## ✍️ Authors <a name = "authors"></a>
