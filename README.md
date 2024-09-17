@@ -68,8 +68,6 @@ The program will start in manual mode and ask you to enter data for correct oper
 
 ## 🗎 Documentation <a name = "documentation"></a>
 
-THIS ARTICLE IS BEING EDITED...
-
 For convenient use of the program, [Doxygen documentation](https://lvbealr.github.io/) is included with the project.
 
 ## 🔧 MODES <a name = "modes"></a>
