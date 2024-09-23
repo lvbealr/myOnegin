@@ -20,7 +20,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-V. G. Belinsky called the poem "Eugene Onegin" by A. S. Pushkin "an encyclopedia of Russian life." But in an encyclopedia everything should be in alphabetical order... Let's fix this problem!
+The Famous Russian Criticist V. G. Belinsky called the poem "Eugene Onegin" by A. S. Pushkin "an encyclopedia of Russian life." But in an encyclopedia everything should be in alphabetical order... Let's fix this problem!
 
 **COMPARE ORDERED AND UNORDERED TEXT! WHICH'S BETTER?**
 
