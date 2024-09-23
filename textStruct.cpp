@@ -51,7 +51,7 @@ int textDataInitialize(const char *fileName, textData *textData) {
     customWarning(fileName != NULL, 1);
     customWarning(textData != NULL, 1);
 
-    struct stat fileData;
+    struct stat fileData = {};
     stat(fileName, &fileData);
 
     textData->fileSize = (ssize_t)fileData.st_size;
@@ -74,7 +74,8 @@ int textDataInitialize(const char *fileName, textData *textData) {
 
     textLineInitialize(textData, lineArray);
 
-    return (openFile <= 0); // openFile returns -1 by error, so textDataInitialize returns 0 by success and 1 by error
+    return (openFile <= 0); // openFile returns -1 by error, so textDataInitialize
+                            // returns 0 by success and 1 by error
 }
 
 int textDataDestruct(textData *textData) {
