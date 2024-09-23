@@ -5,11 +5,12 @@
 #include "customWarning/customWarning.h"
 #include "sort.h"
 
-void mySort(void *array, size_t arrayLength, size_t size, compareFunc *comparator) {  
+void mySort(const void *array, const size_t arrayLength, const size_t size, compareFunc *comparator) {  
     customWarning(array      != NULL, (void) 1);
     customWarning(comparator != NULL, (void) 1);
 
-    char *arrayData = (char *)array;
+    const char *arrayData = (const char *)array;
+    
     for (size_t firstIndex = 0; firstIndex < arrayLength; firstIndex++) {
         for (size_t bubbleIndex = 0; bubbleIndex < arrayLength - firstIndex - 1; bubbleIndex++) {
             if (comparator(arrayData + size * bubbleIndex, arrayData + size * (bubbleIndex + 1)) > 0) {
@@ -19,18 +20,48 @@ void mySort(void *array, size_t arrayLength, size_t size, compareFunc *comparato
     }
 }
 
-void mySwap(void *firstElem, void *secondElem, size_t size) {
+void mySwap(const void *firstElem, const void *secondElem, const size_t size) {
     customWarning(firstElem  != NULL, (void) 1);
     customWarning(secondElem != NULL, (void) 1);
 
     char *firstChar  = (char *)firstElem;
     char *secondChar = (char *)secondElem;
 
-    char temp = 0;
-
     for (size_t index = 0; index < size; index++) {
-        temp              = firstChar[index];
+        char temp         = firstChar[index];
         firstChar[index]  = secondChar[index];
         secondChar[index] = temp;
+    }
+}
+
+void quickSort(const void *array, const size_t size, const size_t start, const size_t end,
+               const compareFunc *comparator) {
+    customWarning(array != NULL, (void) 1);
+
+    if (start < end) {
+        size_t left   = start;
+        size_t right  = end;
+
+        size_t middle = (left + right) / 2;
+
+        const char *charArray = (char *)array;
+
+        while (left <= right) {
+            while(comparator(charArray + left * size, charArray + middle * size) < 0) {
+                left++;
+            }
+            
+            while (comparator(charArray + right * size, charArray+ middle * size) > 0) {
+                right--;
+            }
+
+            if (left <= right) {
+                mySwap(charArray + left * size, charArray + right * size, size);
+                left++;
+                right--;
+            }
+        }
+        quickSort(charArray, size, start, right, comparator);
+        quickSort(charArray, size, left,  end,   comparator);
     }
 }

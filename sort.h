@@ -12,7 +12,7 @@ typedef int (compareFunc)(const void *, const void *);
  * @param size Size Of Data Array Elements
  * @param comparator Pointer To Comparing Function
  */
-void mySort(void *array, size_t arrayLength, size_t size,
+void mySort(const void *array, size_t arrayLength, size_t size,
             compareFunc comparator);
             
 /**
@@ -22,7 +22,10 @@ void mySort(void *array, size_t arrayLength, size_t size,
  * @param secondElem Pointer To Second Element To Swap
  * @param size Size Of Element
  */
-void mySwap(void *firstElem, void *secondElem, size_t size);
+void mySwap(const void *firstElem, const void *secondElem, size_t size);
 // FUNCTION PROTOTYPES //
+
+void quickSort(const void *array, const size_t size, const size_t start, const size_t end,
+               const compareFunc *comparator);
 
 #endif // SORT_H_
