@@ -2,7 +2,9 @@
 #include "outputText.h"
 #include "customWarning/customWarning.h"
 
-int saveChangedText(const char *fileName, textData *textData, textLine *lineArray) {
+// use comparator to print orig text
+
+int saveChangedText(const char *fileName, const textData *textData, const textLine *lineArray) {
     customWarning(fileName   != NULL, 1);
     customWarning(textData   != NULL, 1);
     customWarning(lineArray  != NULL, 1);
@@ -24,7 +26,7 @@ int saveChangedText(const char *fileName, textData *textData, textLine *lineArra
     return 0;
 }
 
-int saveOriginalText(const char *fileName, textData *textData) {
+int saveOriginalText(const char *fileName, const textData *textData) {
     customWarning(fileName   != NULL, 1);
     customWarning(textData   != NULL, 1);
 
